@@ -8,24 +8,30 @@
 </head>
 <body>
 
+<!-- NAVIGATION BAR -->
 <div class="sticky">
     <h1>Environmental Justice & Zoning Reform</h1>
     <div class="navbar">
+        <a href="#intro">Introduction</a>
         <a href="#section1">Section 1</a>
         <a href="#section2">Section 2</a>
         <a href="#section3">Section 3</a>
-        <a href="#section4">Section 4</a>
-        <a href="#section5">Section 5</a>
     </div>
 </div>
 
+<!-- INTRO -->
 <div class="intro">
-    <section>
-        <p>Zoning reform holds immense potential in addressing systemic inequities and promoting environmental justice within the Metro Boston Area. At the heart of this issue lies the concept of single-family zoning, a policy that historically perpetuates socioeconomic segregation and restricts housing accessibility for marginalized communities. By reevaluating and reforming such zoning regulations, planners and policymakers can dismantle barriers that disproportionately affect environmental justice populations. These populations often reside in neighborhoods characterized by lower median household incomes, higher proportions of minorities, and limited English proficiency, as identified by the Executive Office of Energy and Environmental Affairs. Through data-driven visualizations, this project aims to underscore the pivotal role of zoning reform in mitigating environmental injustices, empowering community advocates, and fostering inclusive urban development.</p>
-        <p>In the context of upcoming changes, the intersection of zoning reform and environmental justice becomes increasingly critical. As Massachusetts defines environmental justice populations based on income levels, minority representation, and language proficiency, it becomes evident that existing zoning policies contribute to the marginalization of these communities. However, by leveraging data analytics and visual storytelling, this project endeavors to elucidate the correlation between zoning regulations and social exclusion. By advocating for policy adjustments informed by empirical evidence, planners and community development advocates can champion initiatives that prioritize equity and inclusivity. Through actionable insights and policy recommendations, this visualization project seeks to galvanize stakeholders to challenge the status quo, foster meaningful dialogue, and spearhead tangible reforms that address the root causes of environmental injustice in the Metro Boston Area.</p>
-    </section>
+    <div class="section" id="intro"></div>
+    <script>
+        fetch('sections/intro.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('intro').innerHTML = html;
+        });
+    </script>
 </div>
 
+<!-- SECTIONS -->
 <div class="content">
     <div class="section" id="section1"></div>
     <div class="section" id="section2"></div>
@@ -43,7 +49,6 @@
     fetchAndInsertContent('section2', 'sections/section_2.html');
     fetchAndInsertContent('section3', 'sections/section_3.html');
 </script>
-
 
 </body>
 </html>

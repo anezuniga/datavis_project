@@ -9,6 +9,9 @@ body {
     padding: 10px 0;
     border-bottom: 5px solid #000000;   /* Line separating header and main body */
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .navbar a {
     padding: 14px 20px;
