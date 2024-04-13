@@ -1,0 +1,25 @@
+body {
+    font-family: Georgia;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #176373; 
+    padding: 10px 0;
+    border-bottom: 5px solid #000000;
+    z-index: 1000;
+}
+.navbar a {
+    padding: 14px 20px;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #88B0BF;  
+}
+section {
+    padding: 20px;
+    border-bottom: 1px solid #371616;
+}
