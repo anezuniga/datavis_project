@@ -5,21 +5,21 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #176373; 
+    background-color: #176373;  /* Header block background color */
     padding: 10px 0;
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #000000;   /* Line separating header and main body */
     z-index: 1000;
 }
 .navbar a {
     padding: 14px 20px;
     display: inline-block;
-    color: #000000;
+    color: #000000;     /* Navigation bar letters color */
     text-decoration: none;
 }
 .navbar a:hover {
-    background-color: #88B0BF;  
+    background-color: #88B0BF;  /* Navigation bar background color when placing mouse on section */
 }
 section {
     padding: 20px;
-    border-bottom: 1px solid #371616;
+    border-bottom: 1px solid #371616;   /* Line separating sections */
 }
