@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>Environmental Justice & Zoning Reform</title>
+    <title>Environmental Justice & Zoning Reform</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,33 +12,36 @@
 
 <!-- NAVIGATION BAR -->
 <div class="sticky">
-    <h1>Environmental Justice & Zoning Reform</h1>
-    <div class="quote">"Some nice sentence or quote that DUSP people probably can better come up with, maybe one sentence to summarize all?"</div> <!-- Added quote -->
+    <h1>Resilient Housing Initiative - Environmental Justice and Zoning Reform </h1> <!-- Title -->
+    <div class="quote" id="quote">"How can zoning reform support environmental justice populations in the Metro Boston Area?</div> 
     <div class="navbar">
-        <a href="#intro">Introduction</a>
-        <a href="#section1">Section 1</a>
-        <a href="#section2">Section 2</a>
-        <a href="#section3">Section 3</a>
+        <a href="#project_overview">Project Overview</a>
+        <a href="#environmental_justice">Environmental Justice</a>
+        <a href="#zoning">Zoning</a>
+        <a href="#ej_zoning">Environmental Justice and Zoning Reform</a>
+        <!-- <a href="#datasets">Datasets</a>-->
     </div>
 </div>
 
-<!-- INTRO -->
-<div class="intro">
-    <div class="section" id="intro"></div>
+<!-- Project Overview -->
+<div class="project_overview">
+    <div class="section" id="project_overview"></div>
     <script>
-        fetch('sections/intro.html')
+        fetch('sections/project_overview.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('intro').innerHTML = html;
+            document.getElementById('project_overview').innerHTML = html;
         });
     </script>
 </div>
 
 <!-- SECTIONS -->
 <div class="content">
-    <div class="section" id="section1"></div>
-    <div class="section" id="section2"></div>
-    <div class="section" id="section3"></div>
+    <div class="environmental_justice" id="environmental_justice"></div>
+    <div class="zoning" id="zoning"></div>
+    <div class="ej_zoning" id="ej_zoning"></div>
+    <!--<div class="datasets" id="datasets"></div>-->
+    <div class="timeline" id="timeline"></div>
 </div>
 <script>
     function fetchAndInsertContent(sectionId, fileName) {
@@ -48,9 +51,11 @@
                 document.getElementById(sectionId).innerHTML = html;
             });
     }
-    fetchAndInsertContent('section1', 'sections/section_1.html');
-    fetchAndInsertContent('section2', 'sections/section_2.html');
-    fetchAndInsertContent('section3', 'sections/section_3.html');
+    fetchAndInsertContent('environmental_justice', 'sections/environmental_justice.html');
+    fetchAndInsertContent('zoning', 'sections/zoning.html');
+    fetchAndInsertContent('ej_zoning', 'sections/ej_zoning.html');
+    fetchAndInsertContent('datasets', 'sections/datasets.html');
+    fetchAndInsertContent('timeline', 'sections/timeline.html');
 </script>
 
 </body>
