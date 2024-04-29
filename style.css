@@ -1,43 +1,99 @@
 body {
-    font-family: Georgia;
+  font-family: Georgia;
 }
 .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #176373;  /* Header block background color */
-    padding: 10px 0;
-    border-bottom: 5px solid #000000;   /* Line separating header and main body */
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: -webkit-sticky;   /* To stay on top even going down on webpage */
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;  /* Header block background color */
+  padding: 10px 0;
+  border-bottom: 0px solid #000000;   /* Line separating header and main body */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
-    margin-top: 20px;   /* Top margin for the title */
+  margin-top: 20px;   /* Top margin for the title */
 }
-.quote {
-    margin-top: 10px; /* Top margin for the quote */
-    color: #888; /* Color of the quote */
-    font-style: italic;
-    margin-bottom: 10;
-}
+
+/* General settings for the navigation bar */
 .navbar {
-    margin-top: 10px;   /*Top margin for the navigation bar */
+overflow: hidden;
+background-color: #ffffff;
+position: relative;
+font-size: 17px; /* Uniform font size for all links */
 }
+
+/* Style for navigation bar links */
 .navbar a {
-    padding: 14px 20px;
-    display: inline-block;
-    color: #000000;     /* Navigation bar letters color */
-    text-decoration: none;
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+position: relative;
+transition: color 0.3s; /* Smooth transition for color changes */
 }
+
+/* Continuous thin line at the bottom of the navigation bar for all links */
+.navbar a::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px; /* Initial thin line for all items */
+background-color: #88b0bf; /* Initially transparent */
+transition: background-color 0.3s, height 0.3s; /* Smooth transitions for color and thickness */
+}
+
+/* Hover effect increases line thickness */
+.navbar a:hover::after, .navbar a.active::after {
+background-color: #88b0bf; /* Blue line on hover or active */
+height: 4px; /* Thicker line on hover or when active */
+}
+
+/* Color change on hover for better visual feedback */
 .navbar a:hover {
-    background-color: #88B0BF;  /* Navigation bar background color when placing mouse on section */
+color: #88b0bf;
 }
+
 section {
-    padding: 20px;
-    border-bottom: 1px solid #371616;   /* Line separating sections */
+  padding: 10px; /* Padding in between sections */
+  border-bottom: px solid #371616;   /* Line separating sections */
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_half {
+  width: 45%; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.image_half {
+  width: 45%;
+  height: 100%;
+}
+
+.image_half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.image_all {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 
 @font-face {
     font-family: 'ESL Legend';
@@ -93,13 +149,13 @@ section {
     text-align: center;
   }
   .ag-timeline_tagline {
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(84, 89, 95);
   }
   .ag-timeline_title {
     font-size: 40px;
     color: rgb(84, 89, 95);
-    font-size: 60px;
+    font-size: 40px;
   }
   
   .ag-timeline_item {
