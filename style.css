@@ -5,7 +5,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #176373;  /* Header block background color */
+    background-color: #ffffff;  /* Header block background color */
     padding: 10px 0;
     border-bottom: 5px solid #000000;   /* Line separating header and main body */
     z-index: 1000;
@@ -32,7 +32,7 @@ h1 {
     text-decoration: none;
 }
 .navbar a:hover {
-    background-color: #88B0BF;  /* Navigation bar background color when placing mouse on section */
+    background-color: #ffffff;  /* Navigation bar background color when placing mouse on section */
 }
 section {
     padding: 10px; /* Padding in between sections */
@@ -153,7 +153,7 @@ section {
   }
   .ag-timeline_line {
     width: 2px;
-    background-color: #1F6373;
+    background-color: #ffffff;
   
     position: absolute;
     top: 2px;
@@ -172,7 +172,7 @@ section {
   .ag-timeline_line-progress {
     width: 100%;
     height: 20%;
-    background-color: #86A685;
+    background-color: #ffffff;
   }
   
   .ag-timeline-card_box {
@@ -193,7 +193,7 @@ section {
     line-height: 50px;
     width: 50px;
     border: 3px solid #86A685;
-    background-color: #1F6373;
+    background-color: #ffffff;
   
     text-align: center;
     font-family: 'ESL Legend', sans-serif;
@@ -206,7 +206,7 @@ section {
   }
   .js-ag-active .ag-timeline-card_point {
     color: #1F6373;
-    background-color: #86A685;
+    background-color: #ffffff;
   }
   .ag-timeline-card_meta-box {
     display: inline-block;
@@ -223,7 +223,7 @@ section {
     display: inline-block;
     width: 45%;
     margin: -77px 0 0;
-    background-color: #1F6373;
+    background-color: #ffffff;
   
     opacity: 0;
   
