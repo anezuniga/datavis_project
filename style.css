@@ -2,12 +2,12 @@ body {
     font-family: Georgia;
 }
 .sticky {
-    position: -webkit-sticky;
+    position: -webkit-sticky;   /* To stay on top even going down on webpage */
     position: sticky;
     top: 0;
     background-color: #ffffff;  /* Header block background color */
     padding: 10px 0;
-    border-bottom: 5px solid #000000;   /* Line separating header and main body */
+    border-bottom: 0px solid #000000;   /* Line separating header and main body */
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -16,24 +16,50 @@ body {
 h1 {
     margin-top: 20px;   /* Top margin for the title */
 }
-.quote {
-    margin-top: 10px; /* Top margin for the quote */
-    color: #888; /* Color of the quote */
-    font-style: italic;
-    margin-bottom: 10;
-}
+
+/* General settings for the navigation bar */
 .navbar {
-    margin-top: 10px;   /*Top margin for the navigation bar */
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  font-size: 17px; /* Uniform font size for all links */
 }
+
+/* Style for navigation bar links */
 .navbar a {
-    padding: 14px 20px;
-    display: inline-block;
-    color: #000000;     /* Navigation bar letters color */
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s; /* Smooth transition for color changes */
 }
+
+/* Continuous thin line at the bottom of the navigation bar for all links */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Initial thin line for all items */
+  background-color: #88b0bf; /* Initially transparent */
+  transition: background-color 0.3s, height 0.3s; /* Smooth transitions for color and thickness */
+}
+
+/* Hover effect increases line thickness */
+.navbar a:hover::after, .navbar a.active::after {
+  background-color: #88b0bf; /* Blue line on hover or active */
+  height: 4px; /* Thicker line on hover or when active */
+}
+
+/* Color change on hover for better visual feedback */
 .navbar a:hover {
-    background-color: #ffffff;  /* Navigation bar background color when placing mouse on section */
+  color: #88b0bf;
 }
+
 section {
     padding: 10px; /* Padding in between sections */
     border-bottom: px solid #371616;   /* Line separating sections */
