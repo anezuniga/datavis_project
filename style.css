@@ -111,11 +111,26 @@ text-align: justify;
 }
 
 .image_half_bottom {
-  width: 50%; /* Each image takes half of the container width */
+  width: 48%; /* Each image takes half of the container width */
   height: auto; /* Maintain aspect ratio */
 }
 
 .image_half_bottom img {
+  width: 100%; /* Make sure the image takes up the entire space of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.plot-container_four {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plot_four {
+  width: 23%; /* Each plot takes up approximately one-fourth of the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.plot_four img {
   width: 100%; /* Make sure the image takes up the entire space of its container */
   height: auto; /* Maintain aspect ratio */
 }
