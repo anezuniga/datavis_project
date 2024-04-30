@@ -1,158 +1,127 @@
+/* Global styles */
 body {
-  font-family: Georgia;
-}
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  padding: 10px 0;
-  border-bottom: 0px solid #000000;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-h1 {
-  margin-top: 20px;
+  font-family: Georgia;               /* Set the default font family */
 }
 
+/* Sticky navigation */
+.sticky {
+  position: -webkit-sticky;           /* For Safari */
+  position: sticky;                   /* Position sticky for compatible browsers */
+  top: 0;                             /* Stick to the top of the viewport */
+  background-color: #ffffff;        /* White background */
+  padding: 10px 0;                    /* Padding for content */
+  border-bottom: 0px solid #000000; /* Bottom border */
+  z-index: 1000;                      /* Stack order */
+  display: flex;                      /* Flex container */
+  flex-direction: column;             /* Stack items vertically */
+  align-items: center;                /* Center items horizontally */
+}
+
+/* Headings */
+h1 {
+  margin-top: 20px;                   /* Margin above h1 */
+}
+
+/* Navigation bar */
 .navbar {
-overflow: hidden;
-background-color: #ffffff;
-position: relative;
-font-size: 17px;
+  overflow: hidden;                   /* Hide overflowing content */
+  background-color: #ffffff;        /* White background */
+  position: relative;                 /* Position relative for absolute children */
+  font-size: 17px;                    /* Font size */
 }
 
 .navbar a {
-float: left;
-display: block;
-color: black;
-text-align: center;
-padding: 14px 20px;
-text-decoration: none;
-position: relative;
-transition: color 0.3s;
+  float: left;                        /* Float links to the left */
+  display: block;                     /* Block level elements */
+  color: black;                     /* Link color */
+  text-align: center;                 /* Center text */
+  padding: 14px 20px;                 /* Padding for links */
+  text-decoration: none;              /* Remove default underline */
+  position: relative;                 /* Position relative for pseudo elements */
+  transition: color 0.3s;             /* Smooth color transition */
 }
 
 .navbar a::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-width: 100%;
-height: 2px;
-background-color: #88b0bf;
-transition: background-color 0.3s, height 0.3s;
+  content: '';                        /* Empty content for pseudo element */
+  position: absolute;                 /* Position absolute */
+  left: 0;                            /* Align to the left */
+  bottom: 0;                          /* Align to the bottom */
+  width: 100%;                        /* Full width */
+  height: 2px;                        /* Height of underline */
+  background-color: #88b0bf;        /* Color of underline */
+  transition: background-color 0.3s, height 0.3s; /* Smooth transition */
 }
 
 .navbar a:hover::after, .navbar a.active::after {
-background-color: #88b0bf;
-height: 4px;
+  background-color: #88b0bf;        /* Hover color of underline */
+  height: 5px;                        /* Increase height on hover */
 }
 
 .navbar a:hover {
-color: #88b0bf;
+  color: #88b0bf;                   /* Change link color on hover */
 }
 
+/* Sections */
 section {
-  padding: 10px;
-  border-bottom: px solid #371616;
+  padding: 10px;                      /* Padding for sections */
+  border-bottom: 0px solid #371616; /* Bottom border for sections */
 }
+
+/* Flex container */
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;                      /* Flex container */
+  justify-content: space-between;     /* Space items evenly */
+  align-items: center;                /* Center items vertically */
 }
 
+/* Half-width box */
 .box_half {
-  width: 45%; 
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  width: 45%;                         /* 45% width */
+  padding: 20px;                      /* Padding for content */
+  border: 1px solid #ccc;           /* Border */
+  box-sizing: border-box;             /* Include padding and border in box sizing */
 }
 
+/* Half-width image container */
 .image_half {
-  width: 45%;
-  height: 100%;
+  width: 45%;                         /* 45% width */
+  height: 100%;                       /* Full height */
 }
 
 .image_half img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  width: 100%;                        /* Full width */
+  height: 100%;                       /* Full height */
+  object-fit: cover;                  /* Cover image */
 }
 
+/* Full-width image container */
 .image_all {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+  width: 100%;                        /* Full width */
+  height: 100%;                       /* Full height */
+  justify-content: center;            /* Center content horizontally */
 }
 
+/* Half-width box without border */
 .no_box_half {
-width: 50%; 
-padding: 20px;
-border: 0px solid #ccc;
-box-sizing: border-box;
+  width: 50%;                         /* 50% width */
+  padding: 20px;                      /* Padding for content */
+  border: 0px solid #ccc;           /* No border */
+  box-sizing: border-box;             /* Include padding and border in box sizing */
 }
 
+/* Justified text */
 .justified {
-text-align: justify;
+  text-align: justify;                /* Justify text */
 }
 
+/* Margin between containers */
 .container + .container {
-  margin-top: 40px;
+  margin-top: 40px;                   /* Margin between containers */
 }
 
+/* Bottom-aligned container */
 .container_bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; /* Align items to the bottom */
-}
-
-.image_half_bottom {
-  width: 48%; /* Each image takes half of the container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.image_half_bottom img {
-  width: 100%; /* Make sure the image takes up the entire space of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.plot-container_four {
-  display: flex;
-  justify-content: space-between;
-}
-
-.plot_four {
-  width: 23%; /* Each plot takes up approximately one-fourth of the container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.plot_four img {
-  width: 100%; /* Make sure the image takes up the entire space of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.plot-container_outer {
-  display: flex;
-  justify-content: center; /* Center the inner container horizontally */
-}
-
-.plot-container_one {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.plot_one {
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-}
-
-.plot_one img {
-  width: 100%;
-  height: auto;
+  display: flex;                      /* Flex container */
+  justify-content: space-between;     /* Space items evenly */
+  align-items: flex-end;              /* Align items to the bottom */
 }
