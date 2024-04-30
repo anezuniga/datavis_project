@@ -134,3 +134,25 @@ text-align: justify;
   width: 100%; /* Make sure the image takes up the entire space of its container */
   height: auto; /* Maintain aspect ratio */
 }
+
+.plot-container_outer {
+  display: flex;
+  justify-content: center; /* Center the inner container horizontally */
+}
+
+.plot-container_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plot_one {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.plot_one img {
+  width: 100%;
+  height: auto;
+}
