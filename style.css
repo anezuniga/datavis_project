@@ -103,3 +103,19 @@ text-align: justify;
 .container + .container {
   margin-top: 40px;
 }
+
+.container_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Align items to the bottom */
+}
+
+.image_half_bottom {
+  width: 50%; /* Each image takes half of the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image_half_bottom img {
+  width: 100%; /* Make sure the image takes up the entire space of its container */
+  height: auto; /* Maintain aspect ratio */
+}
