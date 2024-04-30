@@ -1,106 +1,101 @@
 body {
-    font-family: Georgia;
+  font-family: Georgia;
 }
 .sticky {
-    position: -webkit-sticky;   /* To stay on top even going down on webpage */
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;  /* Header block background color */
-    padding: 10px 0;
-    border-bottom: 0px solid #000000;   /* Line separating header and main body */
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 0px solid #000000;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
-    margin-top: 20px;   /* Top margin for the title */
+  margin-top: 20px;
 }
 
-/* General settings for the navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: relative;
-  font-size: 17px; /* Uniform font size for all links */
+overflow: hidden;
+background-color: #ffffff;
+position: relative;
+font-size: 17px;
 }
 
-/* Style for navigation bar links */
 .navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s; /* Smooth transition for color changes */
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+position: relative;
+transition: color 0.3s;
 }
 
-/* Continuous thin line at the bottom of the navigation bar for all links */
 .navbar a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px; /* Initial thin line for all items */
-  background-color: #88b0bf; /* Initially transparent */
-  transition: background-color 0.3s, height 0.3s; /* Smooth transitions for color and thickness */
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background-color: #88b0bf;
+transition: background-color 0.3s, height 0.3s;
 }
 
-/* Hover effect increases line thickness */
 .navbar a:hover::after, .navbar a.active::after {
-  background-color: #88b0bf; /* Blue line on hover or active */
-  height: 4px; /* Thicker line on hover or when active */
+background-color: #88b0bf;
+height: 4px;
 }
 
-/* Color change on hover for better visual feedback */
 .navbar a:hover {
-  color: #88b0bf;
+color: #88b0bf;
 }
 
 section {
-    padding: 10px; /* Padding in between sections */
-    border-bottom: px solid #371616;   /* Line separating sections */
+  padding: 10px;
+  border-bottom: px solid #371616;
 }
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box_half {
-    width: 45%; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.image_half {
-    width: 45%;
-    height: 100%;
-}
-
-.image_half img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.image_all {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
-
-.no_box_half {
-  width: 50%; 
+  width: 45%; 
   padding: 20px;
-  border: 0px solid #ccc;
+  border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
+.image_half {
+  width: 45%;
+  height: 100%;
+}
+
+.image_half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.image_all {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.no_box_half {
+width: 50%; 
+padding: 20px;
+border: 0px solid #ccc;
+box-sizing: border-box;
+}
+
 .justified {
-  text-align: justify;
+text-align: justify;
 }
