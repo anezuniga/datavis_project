@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Environmental Justice & Zoning Reform</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
     <body style="background-color: #ffffff;">   <!-- Body background color -->
@@ -44,6 +45,7 @@
     <div class="environmental_justice" id="environmental_justice"></div>
     <div class="timeline" id="timeline"></div>
     <div class="ej_zoning" id="ej_zoning"></div>
+    <div class="interactive_slider" id="interactive_slider"></div>
     <div class="datasets" id="datasets"></div>
 </div>
 <script>
@@ -60,6 +62,7 @@
     fetchAndInsertContent('datasets', 'sections/datasets.html');
 </script>
 
+<script src="interactive_slider.js"></script>
 <script src="scrollNavigation.js"></script>
 
 </body>
