@@ -93,3 +93,14 @@ section {
     height: 100%;
     justify-content: center;
 }
+
+.no_box_half {
+  width: 50%; 
+  padding: 20px;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+}
+
+.justified {
+  text-align: justify;
+}
