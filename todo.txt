@@ -1,0 +1,13 @@
+- Add padding to navigation so that when going to section it appears below navigation bar
+- Timeline:
+    - Colors?
+    - Size adapt?
+- Add actual plots
+- Interactive
+- Environmental Justice: Amanda will share map to add. Will need to change the layout
+- EJ + Zoning: 
+    - 4 examples (just static for now)
+    - Interactive  (Khadija map merge and then slide)
+
+
+    Justify all text
