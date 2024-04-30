@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="873" height="607" viewBox="0 0 873 607">
+ <g stroke="#000000" fill="#000000" font-family="Segoe UI" font-size="12">
+  <g>
+   <g>
+    <clipPath id="clip1">
+     <path d="M-99999.5,2.5 L-99999.5,100000.5 L100000.5,100000.5 L100000.5,2.5 z"/>
+    </clipPath>
+    <g clip-path="url(#clip1)">
+     <g fill="#DDDDDD">
+      <rect stroke="none" x="23.5" y="34.5" width="603" height="564"/>
+     </g>
+     <g>
+      <clipPath id="clip2" clip-path="url(#clip1)">
+       <path d="M12.5,3.5 L12.5,32.5 L626.5,32.5 L626.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip2)">
+       <g>
+        <clipPath id="clip3" clip-path="url(#clip2)">
+         <path d="M144.5,3.5 L144.5,32.5 L493.5,32.5 L493.5,3.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip3)">
+         <g font-size="21" font-weight="bold">
+          <text stroke="none" x="144.99" y="26.5">Property Uses in the MAPC Region</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="23.5" y="34.5" width="603" height="564"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip4" clip-path="url(#clip1)">
+        <path d="M23.5,34.5 L23.5,598.5 L626.5,598.5 L626.5,34.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip4)">
+        <g>
+         <g fill="#8BB1CC">
+          <path stroke="none" d="M325,76.8 C410.53,76.8 489.82,122.58 532.59,196.65 C575.35,270.72 575.35,362.28 532.59,436.35 C489.82,510.42 410.53,556.2 325,556.2 C246.31,556.2 172.47,517.45 127.76,452.7 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M325,76.8 C410.53,76.8 489.82,122.58 532.59,196.65 C575.35,270.72 575.35,362.28 532.59,436.35 C489.82,510.42 410.53,556.2 325,556.2 C246.31,556.2 172.47,517.45 127.76,452.7"/>
+         </g>
+         <g fill="#01989C">
+          <path stroke="none" d="M127.76,452.7 C90.7,399.04 77.11,332.52 90.13,268.63 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M127.76,452.7 C90.7,399.04 77.11,332.52 90.13,268.63"/>
+         </g>
+         <g fill="#70B4DC">
+          <path stroke="none" d="M90.13,268.63 C91.72,260.85 93.69,253.15 96.04,245.56 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M90.13,268.63 C91.72,260.85 93.69,253.15 96.04,245.56"/>
+         </g>
+         <g fill="#406CA4">
+          <path stroke="none" d="M96.04,245.56 C98.15,238.74 100.57,232.02 103.28,225.41 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M96.04,245.56 C98.15,238.74 100.57,232.02 103.28,225.41"/>
+         </g>
+         <g fill="#277096">
+          <path stroke="none" d="M103.28,225.41 C111.62,205.11 122.71,186.04 136.25,168.76 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M103.28,225.41 C111.62,205.11 122.71,186.04 136.25,168.76"/>
+         </g>
+         <g fill="#0A4B59">
+          <path stroke="none" d="M136.25,168.76 C139.95,164.02 143.83,159.43 147.88,154.99 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M136.25,168.76 C139.95,164.02 143.83,159.43 147.88,154.99"/>
+         </g>
+         <g fill="#86A685">
+          <path stroke="none" d="M147.88,154.99 C157.19,144.78 167.37,135.39 178.3,126.93 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M147.88,154.99 C157.19,144.78 167.37,135.39 178.3,126.93"/>
+         </g>
+         <g fill="#3B5942">
+          <path stroke="none" d="M178.3,126.93 C179.72,125.83 181.16,124.75 182.61,123.68 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M178.3,126.93 C179.72,125.83 181.16,124.75 182.61,123.68"/>
+         </g>
+         <g fill="#AFA502">
+          <path stroke="none" d="M182.61,123.68 C193.8,115.41 205.69,108.14 218.14,101.94 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M182.61,123.68 C193.8,115.41 205.69,108.14 218.14,101.94"/>
+         </g>
+         <g fill="#DC4EB0">
+          <path stroke="none" d="M218.14,101.94 C219.09,101.46 220.04,101 221,100.54 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M218.14,101.94 C219.09,101.46 220.04,101 221,100.54"/>
+         </g>
+         <g fill="#ADD33D">
+          <path stroke="none" d="M221,100.54 C221.65,100.23 222.3,99.92 222.95,99.61 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M221,100.54 C221.65,100.23 222.3,99.92 222.95,99.61"/>
+         </g>
+         <g fill="#A04E8A">
+          <path stroke="none" d="M222.95,99.61 C228.55,96.97 234.25,94.56 240.04,92.36 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M222.95,99.61 C228.55,96.97 234.25,94.56 240.04,92.36"/>
+         </g>
+         <g fill="#787878">
+          <path stroke="none" d="M240.04,92.36 C251.74,87.93 263.77,84.41 276.03,81.86 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M240.04,92.36 C251.74,87.93 263.77,84.41 276.03,81.86"/>
+         </g>
+         <g fill="#86CBA2">
+          <path stroke="none" d="M276.03,81.86 C276.87,81.68 277.71,81.51 278.55,81.34 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M276.03,81.86 C276.87,81.68 277.71,81.51 278.55,81.34"/>
+         </g>
+         <g fill="#2160BD">
+          <path stroke="none" d="M278.55,81.34 C281.68,80.72 284.83,80.17 287.98,79.68 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M278.55,81.34 C281.68,80.72 284.83,80.17 287.98,79.68"/>
+         </g>
+         <g fill="#A76EB6">
+          <path stroke="none" d="M287.98,79.68 C288.96,79.52 289.94,79.38 290.93,79.23 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M287.98,79.68 C288.96,79.52 289.94,79.38 290.93,79.23"/>
+         </g>
+         <g fill="#E39C85">
+          <path stroke="none" d="M290.93,79.23 C296.59,78.42 302.28,77.81 307.98,77.41 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M290.93,79.23 C296.59,78.42 302.28,77.81 307.98,77.41"/>
+         </g>
+         <g fill="#82B640">
+          <path stroke="none" d="M307.98,77.41 C307.99,77.4 308,77.4 308.01,77.4 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M307.98,77.41 C307.99,77.4 308,77.4 308.01,77.4"/>
+         </g>
+         <g fill="#52E9B3">
+          <path stroke="none" d="M308.01,77.4 C308.03,77.4 308.04,77.4 308.05,77.4 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M308.01,77.4 C308.03,77.4 308.04,77.4 308.05,77.4"/>
+         </g>
+         <g fill="#AEB4D2">
+          <path stroke="none" d="M308.05,77.4 C312.78,77.06 317.52,76.87 322.26,76.82 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M308.05,77.4 C312.78,77.06 317.52,76.87 322.26,76.82"/>
+         </g>
+         <g fill="#A52A9F">
+          <path stroke="none" d="M322.26,76.82 C323.17,76.81 324.09,76.8 325,76.8 L325,316.5 z" fill-rule="evenodd"/>
+          <path fill="none" d="M322.26,76.82 C323.17,76.81 324.09,76.8 325,76.8"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M23.5,598.5 L23.5,34.5 L626.5,34.5 L626.5,598.5 L23.5,598.5"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip5" clip-path="url(#clip1)">
+        <path d="M630.5,34.5 L630.5,377.5 L872.5,377.5 L872.5,34.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip5)">
+        <text stroke="none" x="632.5" y="48.5" dy="4.97">Parcel Use Code</text>
+        <g fill="#8BB1CC">
+         <rect stroke="none" x="632.5" y="62.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="67.5" dy="4.97">Single Family Residence</text>
+        <g fill="#01989C">
+         <rect stroke="none" x="632.5" y="77.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="82.5" dy="4.97">Two or Three Family Residences</text>
+        <g fill="#70B4DC">
+         <rect stroke="none" x="632.5" y="92.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="97.5" dy="4.97">Apartments with Four or more units</text>
+        <g fill="#406CA4">
+         <rect stroke="none" x="632.5" y="107.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="112.5" dy="4.97">Condominium</text>
+        <g fill="#277096">
+         <rect stroke="none" x="632.5" y="122.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="127.5" dy="4.97">Residential Vacant</text>
+        <g fill="#0A4B59">
+         <rect stroke="none" x="632.5" y="137.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="142.5" dy="4.97">Residential Other</text>
+        <g fill="#86A685">
+         <rect stroke="none" x="632.5" y="152.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="157.5" dy="4.97">Commercial</text>
+        <g fill="#3B5942">
+         <rect stroke="none" x="632.5" y="167.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="172.5" dy="4.97">Commercial Vacant</text>
+        <g fill="#AFA502">
+         <rect stroke="none" x="632.5" y="182.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="187.5" dy="4.97">Institutional or Exempt</text>
+        <g fill="#DC4EB0">
+         <rect stroke="none" x="632.5" y="197.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="202.5" dy="4.97">Institutional or Exempt Vacant</text>
+        <g fill="#ADD33D">
+         <rect stroke="none" x="632.5" y="212.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="217.5" dy="4.97">Chapter 61 or 61A or 61B Property</text>
+        <g fill="#A04E8A">
+         <rect stroke="none" x="632.5" y="227.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="232.5" dy="4.97">Federal State or Municipal</text>
+        <g fill="#787878">
+         <rect stroke="none" x="632.5" y="242.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="247.5" dy="4.97">Municipal Vacant</text>
+        <g fill="#86CBA2">
+         <rect stroke="none" x="632.5" y="257.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="262.5" dy="4.97">Group Quarters</text>
+        <g fill="#2160BD">
+         <rect stroke="none" x="632.5" y="272.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="277.5" dy="4.97">Industrial</text>
+        <g fill="#A76EB6">
+         <rect stroke="none" x="632.5" y="287.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="292.5" dy="4.97">Industrial Vacant</text>
+        <g fill="#E39C85">
+         <rect stroke="none" x="632.5" y="302.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="307.5" dy="4.97">Mixed Use</text>
+        <g fill="#82B640">
+         <rect stroke="none" x="632.5" y="317.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="322.5" dy="4.97">Open Space</text>
+        <g fill="#52E9B3">
+         <rect stroke="none" x="632.5" y="332.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="337.5" dy="4.97">Other Agricultural or Recreational</text>
+        <g fill="#AEB4D2">
+         <rect stroke="none" x="632.5" y="347.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="352.5" dy="4.97">Tax Exempt Other</text>
+        <g fill="#A52A9F">
+         <rect stroke="none" x="632.5" y="362.5" width="20" height="11"/>
+        </g>
+        <text stroke="none" x="655.5" y="367.5" dy="4.97">Unknown</text>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g font-size="16">
+   <text stroke="none" x="320.5" y="391.5" dy="17.27">Single Family Residence</text>
+   <text stroke="none" x="320.5" y="413.5" dy="17.27">            65%</text>
+  </g>
+ </g>
+</svg>
