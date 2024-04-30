@@ -99,3 +99,7 @@ box-sizing: border-box;
 .justified {
 text-align: justify;
 }
+
+.container + .container {
+  margin-top: 40px;
+}
