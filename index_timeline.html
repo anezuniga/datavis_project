@@ -10,55 +10,6 @@
     <body style="background-color: #ffffff;">   <!-- Body background color -->
 
 
-<!-- NAVIGATION BAR -->
-<div class="sticky">
-    <h1>Resilient Housing Initiative - Environmental Justice and Zoning Reform </h1> <!-- Title -->
-    <div class="navbar">
-        <a href="#project_overview" class="active">Project Overview</a>
-        <a href="#environmental_justice">Environmental Justice</a>
-        <a href="#zoning">Zoning</a>
-        <a href="#ej_zoning">Environmental Justice and Zoning Reform</a>
-        <!-- <a href="#datasets">Datasets</a>-->
-    </div>
-</div>
-
-<!-- add wuestion -->
-<div style="text-align: center; margin-top: 20px;"><strong>
-    How can zoning reform support environmental justice populations in the Metro Boston Area?
-</strong></div>
-
-<!-- INTRO -->
-<div class="intro">
-    <div class="section" id="intro"></div>
-    <script>
-        fetch('sections/intro.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('intro').innerHTML = html;
-        });
-    </script>
-</div>
-
-<!-- SECTIONS -->
-<div class="content">
-    <div class="section" id="section1"></div>
-    <div class="section" id="section2"></div>
-    <div class="section" id="section3"></div>
-</div>
-<script>
-    function fetchAndInsertContent(sectionId, fileName) {
-        fetch(fileName)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById(sectionId).innerHTML = html;
-            });
-    }
-    fetchAndInsertContent('section1', 'sections/section_1.html');
-    fetchAndInsertContent('section2', 'sections/section_2.html');
-    fetchAndInsertContent('section3', 'sections/section_3.html');
-    
-</script>
-
 <div class="ag-timeline-block">
   <div class="ag-timeline_title-box">
     <div class="ag-timeline_tagline">Timeline</div>
@@ -74,20 +25,18 @@
           <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">1999</div>
+                <div class="ag-timeline-card_point">1920</div>
               </div>
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">MassGIS</div>
+                <div class="ag-timeline-card_meta">Racially restrictive covenants (1920s-1968)</div>
               </div>
             </div>
             <div class="ag-timeline-card_item">
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">MassGIS</div>
+                  <div class="ag-timeline-card_title">Racially restrictive covenants (1920s-1968)</div>
                   <div class="ag-timeline-card_desc">
-                    The history of zoning in the MAPC region is marked by a journey towards greater transparency, accessibility, and
-                    regional collaboration. With the last comprehensive effort to compile zoning data dating back to 1999 by MassGIS, the
-                    need for updated and standardized information became increasingly apparent.
+                    Racially restrictive covenants are the contractual agreements that prohibit the purchase, lease, or occupation of property of a specific racial group, particularly Black Americans. Even after covenants were no longer legally sanctioned, residentials patterns created by the covenants greater lasting systemic exclusion of Non-White residents
                   </div>
                 </div>
               </div>
@@ -98,24 +47,18 @@
           <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Zoning Atlas Initiation</div>
+                <div class="ag-timeline-card_meta">The Federal Housing Administration institutionalized racism by utilizing redling (1934-1968)</div>
               </div>
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2011</div>
+                <div class="ag-timeline-card_point">1934</div>
               </div>
             </div>
             <div class="ag-timeline-card_item">
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Zoning Atlas Initiation</div>
+                  <div class="ag-timeline-card_title">The Federal Housing Administration institutionalized racism by utilizing redling (1934-1968)</div>
                   <div class="ag-timeline-card_desc">
-                    In response, MAPC initiated the Zoning Atlas project in 2011, recognizing the significance of having current and
-                    comprehensive zoning data for informed decision-making and planning processes. However, the undertaking was not without
-                    its challenges, including municipal nonresponse and the complexities involved in spatial boundary delineation and bylaw
-                    interpretation. Despite these obstacles, MAPC remained committed to the project, driven by the understanding that a
-                    comprehensive regional zoning database could serve as a valuable resource for municipalities, stakeholders, and
-                    researchers alike.
-
+                    The Federal Housing Administration institutionalized racism by utilizing redling for mortgage insurance requirements. Redling involved denying or restricting financial services to specific neighborhoods based on race or ethnicity regardless of residents creditworthiness.
                   </div>
                 </div>
               </div>
@@ -126,25 +69,18 @@
           <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2020</div>
+                <div class="ag-timeline-card_point">1968</div>
               </div>
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Zoning Atlas Launch</div>
+                <div class="ag-timeline-card_meta">Suburban Zoning Policies (1968-Present)</div>
               </div>
             </div>
             <div class="ag-timeline-card_item">
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Zoning Atlas Launch</div>
+                  <div class="ag-timeline-card_title">Suburban Zoning Policies (1968-Present)</div>
                   <div class="ag-timeline-card_desc">
-                    Over the years, the Zoning Atlas evolved from a concept into a tangible resource, thanks to collaborative efforts and
-                    input from an advisory group comprising municipal planners, state agency staff, and other stakeholders. This
-                    collaborative approach ensured that the Atlas reflected the diverse needs and perspectives of the region's communities.
-                    The launch of the Zoning Atlas in December 2020 marked a significant milestone in the region's zoning history, providing
-                    a foundational dataset that can be continually updated and improved over time. As a dynamic and evolving resource, the
-                    Zoning Atlas embodies MAPC's commitment to promoting transparent and equitable governance while empowering
-                    municipalities to make informed decisions that shape the future of the MAPC region.
-
+                    Since the 1970s, suburban zoning policies have worsened racial and socioeconomic segregation, with regulations like large lot requirements and minimum multifamily zoning excluding lower-income families and people of color. Originally aimed at controlling density and inflating housing prices, these rules persist today, limiting affordability and rental options, particularly for African American and Latino communities and family households. 
                   </div>
                 </div>
               </div>
@@ -152,113 +88,7 @@
             </div>
           </div>
 
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Exclusionary Zoning?</div>
-              </div>
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">???</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Exclusionary Zoning?</div>
-                  <div class="ag-timeline-card_desc">
-                    Exclusionary zoning laws, rooted in historical discrimination and perpetuated through indirect methods, have long been a
-                    tool of social exclusion in housing markets. Originating in concerns about fire hazards and light-and-air regulations,
-                    these laws evolved to maintain property prices and segregate communities. Despite explicit race-based zoning being
-                    banned, indirect methods continued to segregate neighborhoods, disproportionately affecting residents of color,
-                    particularly Black residents, lower-income and working-class individuals, families with school-aged children, religious
-                    minorities, and immigrants. Such zoning practices favor large, costly, single-family residences, rendering them
-                    unaffordable for many, exacerbating housing shortages, and perpetuating socioeconomic disparities. 
 
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2024</div>
-              </div>
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Current Events</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Current Events</div>
-                  <div class="ag-timeline-card_desc">
-                    Reform efforts, such
-                    as the American Jobs Plan's Unlocking Possibilities Program, aim to dismantle these barriers, promote inclusivity, and
-                    address the deep-rooted inequities in the housing market. Additionally, initiatives like "living little" and "living
-                    denser" advocate for diverse housing typologies and zoning reforms to create more affordable and inclusive communities.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Filler Event</div>
-              </div>
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2021</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Filler Event</div>
-                  <div class="ag-timeline-card_desc">
-                    Donec quam felis, ultricies nec, pellentesque eu,
-                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                    venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                    tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2021</div>
-              </div>
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Filler Event</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Filler Event</div>
-                  <div class="ag-timeline-card_desc">
-                    Quisque rutrum. Aenean imperdiet. Etiam ultricies
-                    nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                    adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-                    hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
-          
         </div>
       </div>
     </div>
