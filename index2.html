@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Justice & Zoning Reform</title>
+    <title>Resilient Housing Initiative - Environmental Justice and Zoning Reform</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
-<body>
-    <body style="background-color: #ffffff;">   <!-- Body background color -->
-
-
+<body style="background-color: #ffffff;">
 <!-- NAVIGATION BAR -->
 <div class="sticky">
-    <h1>Resilient Housing Initiative - Environmental Justice and Zoning Reform </h1> <!-- Title -->
+    <h1>Resilient Housing Initiative - Environmental Justice and Zoning Reform</h1>
     <div class="navbar">
         <a href="#project_overview" class="active">Project Overview</a>
         <a href="#environmental_justice">Environmental Justice</a>
@@ -24,33 +21,23 @@
     </div>
 </div>
 
-<!-- add question -->
+<!-- Question -->
 <div style="text-align: center; margin-top: 20px;"><strong>
     How can zoning reform support environmental justice populations in the Metro Boston Area?
 </strong></div>
 
 <!-- Project Overview -->
-<div class="project_overview">
-    <div class="section" id="project_overview"></div>
-    <script>
-        fetch('sections/project_overview.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('project_overview').innerHTML = html;
-        });
-    </script>
-</div>
+<div id="project_overview"></div>
 
 <!-- SECTIONS -->
-<div class="content">
-    <div class="environmental_justice" id="environmental_justice"></div>
-    <div class="timeline" id="timeline"></div>
-    <div class="ej_zoning" id="ej_zoning"></div>
-    <div class="interactive_slider" id="interactive_slider"></div>
-    <div class="datasets" id="datasets"></div>
-    <div class="sources" id="sources"></div>
-</div>
+<div id="environmental_justice"></div>
+<div id="timeline"></div>
+<div id="ej_zoning"></div>
+<div id="datasets"></div>
+<div id="sources"></div>
+
 <script>
+    // Function to fetch and insert HTML content into specified sections
     function fetchAndInsertContent(sectionId, fileName) {
         fetch(fileName)
             .then(response => response.text())
@@ -58,15 +45,19 @@
                 document.getElementById(sectionId).innerHTML = html;
             });
     }
+
+    // Fetching content for each section
+    fetchAndInsertContent('project_overview', 'sections/project_overview.html');
     fetchAndInsertContent('environmental_justice', 'sections/environmental_justice.html');
-    fetchAndInsertContent('timeline', 'sections/timeline.html');
     fetchAndInsertContent('ej_zoning', 'sections/ej_zoning.html');
     fetchAndInsertContent('datasets', 'sections/datasets.html');
     fetchAndInsertContent('sources', 'sections/sources.html');
+    fetchAndInsertContent('timeline', 'sections/timeline.html');
 </script>
 
 <script src="interactive_slider.js"></script>
 <script src="scrollNavigation.js"></script>
+<script src="animate_timeline.js"></script>
 
 </body>
 </html>
