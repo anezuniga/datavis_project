@@ -1,21 +1,21 @@
 // Animate the EJ Population scatterplot
 
 // Define the dimensions and margins for the scatterplot
-const margin = { top: 30, right: 20, bottom: 30, left: 40 };
-const width = 750 - margin.left - margin.right;
-const height = 600 - margin.top - margin.bottom;
+const margin = { top: 50, right: 20, bottom: 40, left: 45 };
+var width = 750 - margin.left - margin.right;
+var height = 600 - margin.top - margin.bottom;
 
 // Create SVG element
-const svg = d3.select("svg")
+const scatterplotsvg = d3.select("#scatterplot")
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
             .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Define tooltip
-const tooltip = d3.select("body").append("div")
-                  .attr("class", "tooltip")
-                  .style("opacity", 0);
+// const tooltip = d3.select("body").append("div")
+//                   .attr("class", "tooltip")
+//                   .style("opacity", 0);
 
 // Load data from CSV file
 d3.csv("MAPC EJ joined with parcel block groups.csv").then(data => {
@@ -41,7 +41,7 @@ d3.csv("MAPC EJ joined with parcel block groups.csv").then(data => {
 
   const customColorScale = d3.scaleOrdinal()
                    .domain(data.map(d => d.EJ))
-                   .range(["#88B0BF", "#86A685"]); // Add your custom color values
+                   .range(["#88B0BF", "#86A685"]); // Add custom color values
                  
 
   // Create force simulation for beeswarm layout
@@ -54,7 +54,7 @@ d3.csv("MAPC EJ joined with parcel block groups.csv").then(data => {
   simulation.tick(120);
 
   // Add circles for data points
-  const circles = svg.selectAll("circle")
+  const circles = scatterplotsvg.selectAll("circle")
       .data(data)
       .enter()
       .append("circle")
@@ -84,48 +84,41 @@ d3.csv("MAPC EJ joined with parcel block groups.csv").then(data => {
            .style("opacity", 0);
   });
 
-  // // Add x-axis
-  // svg.append("g")
-  //    .attr("class", "x-axis")
-  //    .attr("transform", "translate(0," + height + ")")
-  //    .call(d3.axisBottom(xScale));
 
-  // // Add y-axis
-  // svg.append("g")
-  //    .attr("class", "y-axis")
-  //    .call(d3.axisLeft(yScale));
 
   // Add x-axis
-  svg.append("g")
+  scatterplotsvg.append("g")
     .attr("class", "x-axis")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(xScale))
     .append("text")
     .attr("x", width / 2 )
-    .attr("y", 25)
+    .attr("y", 35)
     .attr("fill", "#000")
     .attr("text-anchor", "middle")
+    .style("font-size", "16px")
     .text("Is the Block Group an EJ Population?");
 
   // Add y-axis
-  svg.append("g")
+  scatterplotsvg.append("g")
     .attr("class", "y-axis")
     .call(d3.axisLeft(yScale))
     .append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 5)
+    .attr("y", -margin.left - 3)
     .attr("x", -height / 2)
     .attr("dy", "1em")
     .attr("fill", "#000")
     .attr("text-anchor", "middle")
+    .style("font-size", "16px")
     .text("% of Residential Properties that are Single-Family");
 
   // Add chart title
-  svg.append("text")
+  scatterplotsvg.append("text")
     .attr("x", width / 2)
     .attr("y", 0 - (margin.top / 2))
     .attr("text-anchor", "middle")
-    .style("font-size", "20px")
+    .style("font-size", "25px")
     .text("How Does Single-Family Housing Differ in EJ Areas?");
 
 });
