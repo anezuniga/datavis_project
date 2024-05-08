@@ -1,0 +1,11 @@
+- Add padding to navigation so that when going to section it appears below navigation bar
+- Add legend to sliding visualization
+- Consistent padding/spacing
+- 4 municipalities decide how to put them
+
+
+- Justify all the text
+
+Before FP3:
+- EJ plot (Amanda)
+- Timeline

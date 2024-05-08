@@ -1,223 +1,410 @@
+/* Global styles */
 body {
-    font-family: Georgia;
-}
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #176373;  /* Header block background color */
-    padding: 10px 0;
-    border-bottom: 5px solid #000000;   /* Line separating header and main body */
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-h1 {
-    margin-top: 20px;   /* Top margin for the title */
-}
-.quote {
-    margin-top: 10px; /* Top margin for the quote */
-    color: #888; /* Color of the quote */
-    font-style: italic;
-    margin-bottom: 10;
-}
-.navbar {
-    margin-top: 10px;   /*Top margin for the navigation bar */
-}
-.navbar a {
-    padding: 14px 20px;
-    display: inline-block;
-    color: #000000;     /* Navigation bar letters color */
-    text-decoration: none;
-}
-.navbar a:hover {
-    background-color: #88B0BF;  /* Navigation bar background color when placing mouse on section */
-}
-section {
-    padding: 20px;
-    border-bottom: 1px solid #371616;   /* Line separating sections */
+  font-family: Georgia;               /* Set the default font family */
 }
 
+/* Sticky navigation */
+.sticky {
+  position: -webkit-sticky;           /* For Safari */
+  position: sticky;                   /* Position sticky for compatible browsers */
+  top: 0;                             /* Stick to the top of the viewport */
+  background-color: #ffffff;        /* White background */
+  padding: 10px 0;                    /* Padding for content */
+  border-bottom: 0px solid #000000; /* Bottom border */
+  z-index: 1000;                      /* Stack order */
+  display: flex;                      /* Flex container */
+  flex-direction: column;             /* Stack items vertically */
+  align-items: center;                /* Center items horizontally */
+}
+
+/* Headings */
+h1 {
+  margin-top: 20px;                   /* Margin above h1 */
+}
+
+/* Navigation bar */
+.navbar {
+  overflow: hidden;                   /* Hide overflowing content */
+  background-color: #ffffff;        /* White background */
+  position: relative;                 /* Position relative for absolute children */
+  font-size: 17px;                    /* Font size */
+}
+
+.navbar a {
+  float: left;                        /* Float links to the left */
+  display: block;                     /* Block level elements */
+  color: black;                     /* Link color */
+  text-align: center;                 /* Center text */
+  padding: 14px 20px;                 /* Padding for links */
+  text-decoration: none;              /* Remove default underline */
+  position: relative;                 /* Position relative for pseudo elements */
+  transition: color 0.3s;             /* Smooth color transition */
+}
+
+.navbar a::after {
+  content: '';                        /* Empty content for pseudo element */
+  position: absolute;                 /* Position absolute */
+  left: 0;                            /* Align to the left */
+  bottom: 0;                          /* Align to the bottom */
+  width: 100%;                        /* Full width */
+  height: 2px;                        /* Height of underline */
+  background-color: #88b0bf;        /* Color of underline */
+  transition: background-color 0.3s, height 0.3s; /* Smooth transition */
+}
+
+.navbar a:hover::after, .navbar a.active::after {
+  background-color: #88b0bf;        /* Hover color of underline */
+  height: 5px;                        /* Increase height on hover */
+}
+
+.navbar a:hover {
+  color: #88b0bf;                   /* Change link color on hover */
+}
+
+/* Sections */
+section {
+  padding: 10px;                      /* Padding for sections */
+  border-bottom: 0px solid #371616; /* Bottom border for sections */
+}
+
+/* Flex container */
+.container {
+  display: flex;                      /* Flex container */
+  justify-content: space-between;     /* Space items evenly */
+  align-items: center;                /* Center items vertically */
+}
+
+/* Half-width box */
+.box_half {
+  width: 45%;                         /* 45% width */
+  padding: 20px;                      /* Padding for content */
+  border: 1px solid #ccc;           /* Border */
+  box-sizing: border-box;             /* Include padding and border in box sizing */
+}
+
+/* Half-width image container */
+.image_half {
+  width: 45%;                         /* 45% width */
+  height: 100%;                       /* Full height */
+}
+
+.image_half img {
+  width: 100%;                        /* Full width */
+  height: 100%;                       /* Full height */
+  object-fit: cover;                  /* Cover image */
+}
+
+/* Full-width image container */
+.image_all {
+  width: 100%;                        /* Full width */
+  height: 100%;                       /* Full height */
+  justify-content: center;            /* Center content horizontally */
+}
+
+/* Half-width box without border */
+.no_box_half {
+  width: 50%;                         /* 50% width */
+  padding: 20px;                      /* Padding for content */
+  border: 0px solid #ccc;           /* No border */
+  box-sizing: border-box;             /* Include padding and border in box sizing */
+}
+
+/* Justified text */
+.justified {
+  text-align: justify;                /* Justify text */
+}
+
+/* Margin between containers */
+.container + .container {
+  margin-top: 40px;                   /* Margin between containers */
+}
+
+/* Bottom-aligned container */
+.container_bottom {
+  display: flex;                      /* Flex container */
+  justify-content: space-between;     /* Space items evenly */
+  align-items: flex-end;              /* Align items to the bottom */
+}
+
+
+
+
 @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: bold;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  .ag-format-container {
-    width: 1160px;
-    margin: 0 auto;
-  
-    position: relative;
-  }
-  
-  .ag-timeline-block {
-    padding: 300px 0;
-  }
-  .ag-timeline_title-box {
-    padding: 0 0 30px;
-  
-    text-align: center;
-  }
-  .ag-timeline_tagline {
-    font-size: 40px;
-    color: rgb(84, 89, 95);
-  }
-  .ag-timeline_title {
-    font-size: 40px;
-    color: rgb(84, 89, 95);
-    font-size: 60px;
-  }
-  
-  .ag-timeline_item {
-    margin: 0 0 50px;
-  
-    position: relative;
-  }
-  .ag-timeline_item:nth-child(2n) {
-    text-align: right;
-  }
-  
-  .ag-timeline {
-    display: inline-block;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  
-    position: relative;
-  }
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ag-format-container {
+  width: 1160px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.ag-timeline-block {
+  padding: 300px 0;
+}
+.ag-timeline_title-box {
+  padding: 0 0 30px;
+
+  text-align: center;
+}
+.ag-timeline_tagline {
+  font-size: 30px;
+  color: rgb(84, 89, 95);
+}
+.ag-timeline_title {
+  font-size: 40px;
+  color: rgb(84, 89, 95);
+  font-size: 40px;
+}
+
+.ag-timeline_item {
+  margin: 0 0 50px;
+
+  position: relative;
+}
+.ag-timeline_item:nth-child(2n) {
+  text-align: right;
+}
+
+.ag-timeline {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  position: relative;
+}
+.ag-timeline_line {
+  width: 2px;
+  background-color: #1F6373;
+
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  bottom: 0;
+
+  overflow: hidden;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.ag-timeline_line-progress {
+  width: 100%;
+  height: 20%;
+  background-color: #86A685;
+}
+
+.ag-timeline-card_box {
+  padding: 0 0 20px 50%;
+}
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+  padding: 0 50% 20px 0;
+}
+.ag-timeline-card_point-box {
+  display: inline-block;
+  margin: 0 14px 0 -28px;
+}
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+  margin: 0 -28px 0 14px;
+}
+.ag-timeline-card_point {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border: 3px solid #86A685;
+  background-color: #1F6373;
+
+  text-align: center;
+  font-family: 'ESL Legend', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.js-ag-active .ag-timeline-card_point {
+  color: #1F6373;
+  background-color: #86A685;
+}
+.ag-timeline-card_meta-box {
+  display: inline-block;
+}
+.ag-timeline-card_meta {
+  margin: 10px 0 0;
+
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #1F6373;
+}
+.ag-timeline-card_item {
+  display: inline-block;
+  width: 45%;
+  margin: -77px 0 0;
+  background-color: #1F6373;
+
+  opacity: 0;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
+
+  position: relative;
+}
+.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+  -webkit-transform: translateX(200%);
+  -moz-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  transform: translateX(200%);
+}
+.js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+.js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+  opacity: 1;
+
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ag-timeline-card_arrow {
+  height: 18px;
+  width: 18px;
+  margin-top: 20px;
+  background-color: #282828;
+
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+  margin-left: calc(-18px / 2);
+  margin-right: calc(-18px / 2);
+}
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
+  margin-left: -10px;
+
+  right: auto;
+  left: 0;
+}
+.ag-timeline-card_img {
+  width: 100%;
+}
+.ag-timeline-card_info {
+  padding: 20px 30px;
+}
+.ag-timeline-card_title {
+  display: none;
+  margin: 10px 0 0;
+
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FF0;
+}
+.ag-timeline-card_desc {
+  line-height: 1.45;
+
+  font-size: 16px;
+  color: #FFF;
+}
+
+
+@media only screen and (max-width: 979px) {
   .ag-timeline_line {
-    width: 2px;
-    background-color: #1F6373;
-  
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    bottom: 0;
-  
-    overflow: hidden;
-  
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 30px;
   }
-  
-  .ag-timeline_line-progress {
-    width: 100%;
-    height: 20%;
-    background-color: #86A685;
+
+  .ag-timeline_item:nth-child(2n) {
+    text-align: left;
   }
-  
-  .ag-timeline-card_box {
-    padding: 0 0 20px 50%;
-  }
+
+  .ag-timeline-card_box,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-    padding: 0 50% 20px 0;
-  }
-  .ag-timeline-card_point-box {
-    display: inline-block;
-    margin: 0 14px 0 -28px;
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-    margin: 0 -28px 0 14px;
-  }
-  .ag-timeline-card_point {
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
-    border: 3px solid #86A685;
-    background-color: #1F6373;
-  
-    text-align: center;
-    font-family: 'ESL Legend', sans-serif;
-    font-size: 20px;
-    color: #FFF;
-  
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-  }
-  .js-ag-active .ag-timeline-card_point {
-    color: #1F6373;
-    background-color: #86A685;
+    padding: 0 0 20px;
   }
   .ag-timeline-card_meta-box {
-    display: inline-block;
+    display: none;
   }
-  .ag-timeline-card_meta {
-    margin: 10px 0 0;
-  
-    font-family: 'ESL Legend', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: #1F6373;
+  .ag-timeline-card_point-box,
+  .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+    margin: 0 0 0 8px;
+  }
+  .ag-timeline-card_point {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
   }
   .ag-timeline-card_item {
-    display: inline-block;
-    width: 45%;
-    margin: -77px 0 0;
-    background-color: #1F6373;
-  
-    opacity: 0;
-  
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-  
-    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-  
-    -webkit-transition: -webkit-transform .5s, opacity .5s;
-    -moz-transition: -moz-transform .5s, opacity .5s;
-    -o-transition: -o-transform .5s, opacity .5s;
-    transition: transform .5s, opacity .5s;
-  
-    position: relative;
+    width: auto;
+    margin: -65px 0 0 75px
   }
-  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
-    -webkit-transform: translateX(-200%);
-    -moz-transform: translateX(-200%);
-    -ms-transform: translateX(-200%);
-    -o-transform: translateX(-200%);
-    transform: translateX(-200%);
-  }
+  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
     -webkit-transform: translateX(200%);
     -moz-transform: translateX(200%);
@@ -225,153 +412,56 @@ section {
     -o-transform: translateX(200%);
     transform: translateX(200%);
   }
-  .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
-  .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-    opacity: 1;
-  
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .ag-timeline-card_arrow {
-    height: 18px;
-    width: 18px;
-    margin-top: 20px;
-    background-color: #282828;
-  
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-  
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
-    margin-left: calc(-18px / 2);
-    margin-right: calc(-18px / 2);
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
-    margin-left: -10px;
-  
     right: auto;
     left: 0;
   }
-  .ag-timeline-card_img {
-    width: 100%;
-  }
-  .ag-timeline-card_info {
-    padding: 20px 30px;
-  }
   .ag-timeline-card_title {
-    display: none;
-    margin: 10px 0 0;
-  
-    font-family: 'ESL Legend', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: #FF0;
+    display: block;
+  }
+  .ag-timeline-card_arrow {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+  .ag-timeline-card_img {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-timeline_title {
+    font-size: 60px;
+  }
+
+  .ag-timeline-card_info {
+    padding: 10px 15px;
   }
   .ag-timeline-card_desc {
-    line-height: 1.45;
-  
-    font-size: 16px;
-    color: #FFF;
+    font-size: 14px;
   }
-  
-  
-  @media only screen and (max-width: 979px) {
-    .ag-timeline_line {
-      left: 30px;
-    }
-  
-    .ag-timeline_item:nth-child(2n) {
-      text-align: left;
-    }
-  
-    .ag-timeline-card_box,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-      padding: 0 0 20px;
-    }
-    .ag-timeline-card_meta-box {
-      display: none;
-    }
-    .ag-timeline-card_point-box,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-      margin: 0 0 0 8px;
-    }
-    .ag-timeline-card_point {
-      height: 40px;
-      line-height: 40px;
-      width: 40px;
-    }
-    .ag-timeline-card_item {
-      width: auto;
-      margin: -65px 0 0 75px
-    }
-    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-      -webkit-transform: translateX(200%);
-      -moz-transform: translateX(200%);
-      -ms-transform: translateX(200%);
-      -o-transform: translateX(200%);
-      transform: translateX(200%);
-    }
-    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
-      right: auto;
-      left: 0;
-    }
-    .ag-timeline-card_title {
-      display: block;
-    }
-    .ag-timeline-card_arrow {
-      margin-top: 12px;
-    }
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
   }
-  
-  @media only screen and (max-width: 767px) {
-    .ag-format-container {
-      width: 96%;
-    }
-  
-    .ag-timeline-card_img {
-      height: auto;
-      width: auto;
-    }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
   }
-  
-  @media only screen and (max-width: 639px) {
-    .ag-timeline_title {
-      font-size: 60px;
-    }
-  
-    .ag-timeline-card_info {
-      padding: 10px 15px;
-    }
-    .ag-timeline-card_desc {
-      font-size: 14px;
-    }
-  }
-  
-  @media only screen and (max-width: 479px) {
-  
-  }
-  
-  @media (min-width: 768px) and (max-width: 979px) {
-    .ag-format-container {
-      width: 750px;
-    }
-  
-  }
-  
-  @media (min-width: 980px) and (max-width: 1161px) {
-    .ag-format-container {
-      width: 960px;
-    }
-  
-  }
+
+}

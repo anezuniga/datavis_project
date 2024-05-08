@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilient Housing Initiative - Environmental Justice and Zoning Reform</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body style="background-color: #ffffff;">
+<!-- NAVIGATION BAR -->
+<div class="sticky">
+    <h1>Resilient Housing Initiative - Environmental Justice and Zoning Reform</h1>
+    <div class="navbar">
+        <a href="#project_overview" class="active">Project Overview</a>
+        <a href="#environmental_justice">Environmental Justice</a>
+        <a href="#timeline">MAPC Zoning Timeline</a>
+        <a href="#ej_zoning">Environmental Justice and Zoning Reform</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#sources">Sources</a>
+    </div>
+</div>
+
+<!-- Question -->
+<div style="text-align: center; margin-top: 20px;"><strong>
+    How can zoning reform support environmental justice populations in the Metro Boston Area?
+</strong></div>
+
+<!-- Project Overview -->
+<div id="project_overview"></div>
+
+<!-- SECTIONS -->
+<div id="environmental_justice"></div>
+<div id="timeline"></div>
+<div id="ej_zoning"></div>
+<div id="datasets"></div>
+<div id="sources"></div>
+
+<script>
+    // Function to fetch and insert HTML content into specified sections
+    function fetchAndInsertContent(sectionId, fileName) {
+        fetch(fileName)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById(sectionId).innerHTML = html;
+            });
+    }
+
+    // Fetching content for each section
+    fetchAndInsertContent('project_overview', 'sections/project_overview.html');
+    fetchAndInsertContent('environmental_justice', 'sections/environmental_justice.html');
+    fetchAndInsertContent('ej_zoning', 'sections/ej_zoning.html');
+    fetchAndInsertContent('datasets', 'sections/datasets.html');
+    fetchAndInsertContent('sources', 'sections/sources.html');
+    fetchAndInsertContent('timeline', 'sections/timeline.html');
+</script>
+
+<script src="interactive_slider.js"></script>
+<script src="scrollNavigation.js"></script>
+<script src="animate_timeline.js"></script>
+
+</body>
+</html>
