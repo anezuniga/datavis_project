@@ -129,6 +129,55 @@ section {
 
 
 
+
+.legend {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.legend-circle {
+  float: left;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dot {
+  fill: steelblue;
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  width: 700px; /* Adjust width as needed */
+}
+
+.wide-chart-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px; /* Adjust width as needed */
+}
+
+.chart {
+  flex: 1;
+  margin: 10px;
+}
+
+
+
 @font-face {
   font-family: 'ESL Legend';
   src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
@@ -466,35 +515,3 @@ img {
 
 }
 
-.dot {
-  fill: steelblue;
-}
-
-.tooltip {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.chart-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px; /* Adjust width as needed */
-}
-
-.chart {
-  flex: 1;
-  margin: 10px;
-}

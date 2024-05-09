@@ -126,11 +126,12 @@ const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minori
       .call(d3.axisLeft(yScale))
       .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", -margin.left + 5)
-      .attr("x", -height / 2)
+      .attr("y", -margin.left - 2)
+      .attr("x", -height / 2 )
       .attr("dy", "1em")
       .attr("fill", "#000")
       .attr("text-anchor", "middle")
+      .style("font-size", "16px")
       .text("% of Residential Properties that are Single-Family");
 
     // Add chart title
@@ -138,7 +139,7 @@ const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minori
       .attr("x", width / 2)
       .attr("y", 0 - (margin.top / 2) - 5)
       .attr("text-anchor", "middle")
-      .style("font-size", "20px")
+      .style("font-size", "25px")
       .text("How Does Single-Family Housing Differ in EJ Areas?");
 
   }

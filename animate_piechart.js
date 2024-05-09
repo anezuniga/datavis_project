@@ -1,10 +1,10 @@
 
  var width = 400;
- var height = 400;
+ var height = 500;
  const radius = Math.min(width, height) / 2;
 
- const color = d3.scaleOrdinal()
-   .range(d3.schemeCategory10);
+//  const color = d3.scaleOrdinal()
+//    .range(d3.schemeCategory10);
 
  const piechartsvg = d3.select("#piechart")
    .attr("width", width)
@@ -19,6 +19,11 @@
  const legend = d3.select("#legend");
 
  d3.csv("tabulated_parcel_types.csv").then(data => {
+  const color = d3.scaleOrdinal()
+                    .domain(data.map(d => d.consolidated_use_code))
+                    .range(["#1F6373", "#88B0BF", "#000080", "#4169E1", "#1E90FF", "#87CEEB",
+                     "#86A685", "#8C4130", "#DDA0DD", "#BF9775"]); // Add your custom color values
+
    color.domain(data.map(d => d.consolidated_use_code));
 
    const arc = d3.arc()
@@ -64,6 +69,15 @@
      .transition()
      .duration(1000)
      .attrTween("d", pieTween);
+
+  // Add chart title
+  piechartsvg.append("text")
+  .attr("x", 0)
+  .attr("y", -220 )
+  .attr("text-anchor", "middle")
+  .style("font-size", "25px")
+  .text("Property Uses in the MAPC Region");
+
 
    // Add legend
    const legendItems = legend.selectAll(".legend-item")
