@@ -491,7 +491,7 @@ img {
 .chart-container {
   display: flex;
   justify-content: space-between;
-  width: 800px; /* Adjust width as needed */
+  width: 1200px; /* Adjust width as needed */
 }
 
 .chart {
