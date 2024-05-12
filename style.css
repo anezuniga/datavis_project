@@ -229,17 +229,28 @@ ol li {
 }
 
 /* Image for interactive 4 municipalities */
-.image-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px;
-}
 
 img {
-  width: 45%; 
+  width: 100%; 
   cursor: pointer; /* Shows a pointer cursor on hover */
 }
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stacks children (image and description) vertically */
+  align-items: center; /* Centers children horizontally */
+  width: 45%; /* Adjust as necessary based on layout */
+  margin: 20px; /* Space around each image container */
+}
+
+.description {
+  text-align: center; /* Ensures text is centered below the image */
+  margin-top: 10px; /* Space between image and text */
+  padding: 10px; /* Padding around the text */
+  background-color: #f4f4f4; /* Optional: for better visibility */
+  width: 100%; /* Takes full width of its container */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
 
 
 
