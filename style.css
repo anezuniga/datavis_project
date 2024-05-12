@@ -234,31 +234,31 @@ ol li {
 }
 
 /* Image for interactive 4 municipalities */
-.container {
+.municipalities-container {
   display: flex;
-  flex-direction: column; /* Change the main container to stack children vertically */
+  flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center-align the items horizontally */
 }
 
-.figure-container, .text-container {
+.municipalities-figure-container, .municipalities-text-container {
   width: 100%;
   display: flex;
   justify-content: space-around; /* Spread out images and texts evenly */
   align-items: flex-start;
 }
 
-.image-container {
+.municipalities-image-container {
   width: 45%; /* Adjust width as necessary based on layout */
   margin: 20px; /* Space around each image container */
 }
 
-img {
+.municipalities-image-container img {
   width: 100%; 
   cursor: pointer; /* Shows a pointer cursor on hover */
   display: block; /* Removes bottom margin/padding typical in inline elements */
 }
 
-.description {
+.municipalities-description {
   text-align: justify; /* Justifies the text within the description box */
   margin-top: 10px; /* Space between image container and text */
   padding: 10px; /* Padding around the text */
