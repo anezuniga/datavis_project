@@ -31,7 +31,7 @@ h2 {
 }
 
 /* Figure captions */
-figcaption {
+.image_half figcaption {
   font-family: Georgia, sans-serif;   /* Font style for caption*/
   font-size: 10px;                    /* Font size for caption*/
   text-align: Left;                   /* Align left */
@@ -152,10 +152,6 @@ p {
   align-items: flex-end;              /* Align items to the bottom */
 }
 
-
-
-
-
 .legend {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -202,7 +198,35 @@ p {
   margin: 10px;
 }
 
+/* Ordered list */
+ol {
+  font-size: inherit;     /* Use the font size inherited from the parent */
+}
+ol li {
+  line-height: 2;         /* Double spacing between list items */
+}
 
+/* Full-width image container */
+.image_full {
+  width: 100%;            /* Take up the full width of its container */
+  height: auto;           /* Maintain aspect ratio */
+  margin-bottom: 20px;    /* Add some space between this and other elements */
+  margin-top: 20px;       /* Add some space between this and other elements */
+  text-align: center;     /* Center the image horizontally */
+}
+.image_full img {
+  width: 70%;             /* Ensure the image takes up the full width of the container */
+  height: auto;           /* Maintain aspect ratio */
+}
+/* Figure captions */
+.image_full figcaption {
+  font-family: Georgia, sans-serif;   /* Font style for caption*/
+  font-size: 10px;                    /* Font size for caption*/
+  text-align: left;                   /* Align left */
+  margin-top: 5px;                    /* Spacing with top*/
+  margin-left: 15%;                   /* Adjust margin to start from the left of the image */
+  display: block;
+}
 
 @font-face {
   font-family: 'ESL Legend';
