@@ -24,6 +24,12 @@ h1 {
   font-size: 35px;                    /* Title font size*/
 }
 
+h2 {
+  margin-top: 20px;                   /* Margin above h2 */
+  margin-bottom: 10px;                   /* Margin above h2 */
+  font-size: 30px;                    /* Title font size*/
+}
+
 /* Figure captions */
 figcaption {
   font-family: Georgia, sans-serif;   /* Font style for caption*/
