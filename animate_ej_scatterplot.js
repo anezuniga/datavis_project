@@ -20,7 +20,10 @@ const scatterplotsvg = d3.select("#scatterplot")
 // Define the desired order of x-axis categories
 const desiredOrderEJ = ["EJ Population", "Not an EJ Population"];
 const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minority and income", "Minority and English isolation",
-                               "Income and English isolation", "Minority, income and English isolation", "N/A"];
+                              "Minority, income and English isolation", "Income and English isolation", "N/A"];
+
+const colorsEJ = ["#88B0BF", "#86A685"];
+const colorsCriteria = ["#a4c2f4", "#ea9999", "#ffe599", "#f9cb9c", "#b6d7a8", "#d5a6bd", "#b4a7d6", "#86A685"];                               
    
 
 // // Load data from CSV file
@@ -53,8 +56,8 @@ const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minori
                     .range([height, 0]);
 
     const customColorScale = d3.scaleOrdinal()
-                    .domain(data.map(d => d[xKey]))
-                    .range(["#88B0BF", "#86A685"]); // Add your custom color values
+                    .domain(xKey === "EJ_pop" ? desiredOrderEJ : desiredOrderCriteria)
+                    .range(xKey === "EJ_pop" ? colorsEJ : colorsCriteria); // Add your custom color values
                   
 
     // Create force simulation for beeswarm layout
@@ -75,7 +78,7 @@ const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minori
         .attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; })
         .attr("r", 3)
-        .style("fill", d => customColorScale(d.EJ));
+        .style("fill", d => customColorScale(d[xKey]));
       
 
     // Add tooltip on hover
