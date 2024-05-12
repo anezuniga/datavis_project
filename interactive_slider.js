@@ -47,14 +47,6 @@ const divisionLine = sliderGroup.append("line")
 const plotGroup = svg.append('g')
     .attr('transform', `translate(${svgWidth}, 0)`); // Position it next to the slider
 
-// Append the image to the plot group
-plotGroup.append('image')
-    .attr('xlink:href', 'figures/slider_legend.png')
-    .attr('width', plotWidth)
-    .attr('height', svgHeight)
-    .attr('x', 0)
-    .attr('y', 0);
-
 // Update function for mouse move
 function updateOnMouseMove(event) {
     const mouseX = d3.pointer(event, this)[0];
