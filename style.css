@@ -228,6 +228,21 @@ ol li {
   display: block;
 }
 
+/* Image for interactive 4 municipalities */
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+img {
+  width: 45%; 
+  cursor: pointer; /* Shows a pointer cursor on hover */
+}
+
+
+
 @font-face {
   font-family: 'ESL Legend';
   src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
