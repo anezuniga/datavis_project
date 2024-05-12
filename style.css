@@ -158,7 +158,7 @@ p {
 }
 
 .legend-circle {
-  float: left;
+  /* float: left; */
   display: inline-block;
   width: 12px;
   height: 12px;

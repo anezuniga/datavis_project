@@ -86,13 +86,30 @@
    .append("div")
    .attr("class", "legend-item");
 
- legendItems.append("div")
-   .attr("class", "legend-circle")
-   .style("background-color", d => color(d.consolidated_use_code));
+//  legendItems.append("div")
+//    .attr("class", "legend-circle")
+//    .style("background-color", d => color(d.consolidated_use_code));
 
- legendItems.append("div")
-   .attr("class", "legend-label")
-   .text(d => d.consolidated_use_code);
+//  legendItems.append("div")
+//    .attr("class", "legend-label")
+//    .text(d => d.consolidated_use_code);
+
+  legendItems.append("div")
+    .attr("class", "legend-circle")
+    .style("width", "20px")
+    .style("height", "20px")
+    .style("background-color", d => color(d.consolidated_use_code))
+    .style("display", "inline-block")
+    .style("margin-right", "5px");
+
+  legendItems.append("span")
+    .text(d => d.consolidated_use_code);
+
+  // Center the legend vertically
+  const svgHeight = +svg.attr("height");
+  const legendHeight = +legend.style("height").split("px")[0];
+  const paddingTop = (svgHeight - legendHeight - 100) / 2;
+  legend.style("padding-top", paddingTop + "px");
 
 
  });
