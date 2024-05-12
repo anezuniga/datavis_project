@@ -96,7 +96,7 @@ p {
 /* Flex container */
 .container {
   display: flex;                      /* Flex container */
-  justify-content: space-between;     /* Space items evenly */
+  justify-content: center;     /* Space items evenly */
   align-items: center;                /* Center items vertically */
 }
 
@@ -152,6 +152,10 @@ p {
   align-items: flex-end;              /* Align items to the bottom */
 }
 
+.spacer {
+  height: 50px; /* Adjust the height as needed */
+}
+
 .legend {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -183,7 +187,8 @@ p {
 
 .chart-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 700px; /* Adjust width as needed */
 }
 
