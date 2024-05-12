@@ -70,7 +70,7 @@ h2 {
 
 .navbar a:hover::after, .navbar a.active::after {
   background-color: #88b0bf;        /* Hover color of underline */
-  height: 5px;                        /* Increase height on hover */
+  height: 2px;                        /* Increase height on hover */
 }
 
 .navbar a:hover {
