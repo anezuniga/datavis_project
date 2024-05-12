@@ -248,7 +248,7 @@ img {
 }
 
 .description {
-  text-align: center; /* Ensures text is centered below the image */
+  text-align: justify; /* Ensures text is centered below the image */
   margin-top: 10px; /* Space between image and text */
   padding: 10px; /* Padding around the text */
   background-color: #f4f4f4; /* Optional: for better visibility */
