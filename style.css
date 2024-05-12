@@ -43,7 +43,7 @@ h2 {
   overflow: hidden;                   /* Hide overflowing content */
   background-color: #ffffff;        /* White background */
   position: relative;                 /* Position relative for absolute children */
-  font-size: 18px;                    /* Font size */
+  font-size: 15px;                    /* Font size */
 }
 
 .navbar a {
