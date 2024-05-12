@@ -153,7 +153,7 @@ const desiredOrderCriteria = ["English isolation", "Income", "Minority", "Minori
     const toggleXCheckbox = document.getElementById("toggleX");
     toggleXCheckbox.addEventListener("change", function() {
       const isChecked = toggleXCheckbox.checked;
-      const xKey = isChecked ? "EJ_pop" : "recoded_ej_criteria"; // Choose x-axis variable based on checkbox state
+      const xKey = isChecked ? "recoded_ej_criteria" : "EJ_pop"; // Choose x-axis variable based on checkbox state
       createScatterplot(data, xKey); // Update scatterplot with new x-axis variable
     });
   }).catch(error => {
