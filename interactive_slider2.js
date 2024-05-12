@@ -14,13 +14,13 @@ const sliderGroup = svg.append('g');
 
 // Append the first map
 const map1 = sliderGroup.append('image')
-    .attr('xlink:href', 'figures/ej_nl.png')
+    .attr('xlink:href', 'figures/ej_l.png')
     .attr('width', svgWidth)
     .attr('height', svgHeight);
 
 // Append the second map
 const map2 = sliderGroup.append('image')
-    .attr('xlink:href', 'figures/sfam_nl.png')
+    .attr('xlink:href', 'figures/sfam_l.png')
     .attr('width', svgWidth)
     .attr('height', svgHeight);
 
