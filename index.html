@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resilient Housing Initiative - Environmental Justice and Zoning Reform</title>
+    <title>Resilient Housing Initiative</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
@@ -47,8 +47,6 @@
   fetchAndInsertContent('project_overview', 'sections/project_overview.html');
   fetchAndInsertContent('environmental_justice', 'sections/environmental_justice.html');
   fetchAndInsertContent('ej_zoning_title', 'sections/ej_zoning_title.html');
-  fetchAndInsertContent('datasets', 'sections/datasets.html');
-  fetchAndInsertContent('sources', 'sections/sources.html');
 </script>
 
 <div id="timeline"></div>
@@ -308,8 +306,7 @@ The relationship between single family zoning and environmental justice populati
 
 <div class="line"></div> 
 
-<section id="datasets">
-  <h2>Datasets</h2>
+  <h2 id="datasets">Datasets</h2>
   <ul style="text-align: justify;">
       <li><strong>Single Family Zoning Dataset:</strong>This dataset, derived from MAPC's Zoning Atlas and integrating data from diverse sources, provides a comprehensive understanding of housing zoning dynamics and demographic profiles within the Metro Boston area. It combines spatial and tabular data pertaining to zoning districts within the 101 municipalities of the MAPC region, specifically focusing on Metro Boston, categorizing areas based on whether they are designated solely for single-family housing or for other types of housing.The dataset also aggregates demographic and income data from census sources, offering insights into population characteristics and household incomes within these zoning areas. MassGIS contributes municipal boundary data, defining the geographical extents of each municipality, while the census boundary areas are from the year 2010. Demographic information, including population distribution and ethnicity, is sourced from the US Census and ACS, with general population and housing characteristics by blocks from the US Census in 2010. Additionally, income data from the ACS, aggregated at the block group level, is from the years 2014-2018. There are some rows for some municipalities to show municipalities that have only single-family zoning and other housing zoning.</li>
 
@@ -318,10 +315,8 @@ The relationship between single family zoning and environmental justice populati
       <li><strong>MAPC Parcel Dataset Description:</strong>The MAPC Parcel Dataset provides a comprehensive understanding of land parcel dynamics within the Metropolitan Area Planning Council (MAPC) region, focusing on zoning information and property characteristics. Derived from the MA Land Parcel Dataset and incorporating diverse sources, this dataset integrates spatial and tabular data related to parcels across 101 municipalities within the MAPC area. Key attributes include parcel identifiers, facilitating unique parcel identification and spatial analysis. Detailed property valuation data, including building value, land value, and total assessed value, offer insights into property valuations and economic profiles. Additionally, zoning information such as zone code, zone name, and zone use type provides crucial information on land use regulations and zoning designations. Property characteristics such as year built, building area, and number of units offer further insights into the physical attributes of properties. Furthermore, derived attributes such as zoned density and actual density allow for analysis of compliance with zoning regulations. Municipal boundary data from MassGIS delineate the geographical extent of each municipality, while zoning data provides information on zoning districts within which properties lie. The dataset serves as a valuable resource for urban planning, real estate analysis, and policy development within the MAPC region, facilitating informed decision-making and strategic planning efforts.
       </li>
   </ul>
-</section>
 
-<section id="sources">
-  <h2>Sources</h2>
+  <h2 id="sources">Sources</h2>
   <ul>
       <li>
           Massachusetts Executive Office of Energy and Environmental Affairs. "Environmental Justice Populations in Massachusetts." <a href="https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts#what-is-an-environmental-justice-population?-" target="_blank">Link</a>
@@ -363,7 +358,6 @@ The relationship between single family zoning and environmental justice populati
           Code Open. "Timeline IE." <a href="https://codepen.io/alvarotrigo/pen/yLzBJaN" target="_blank">Link</a>
       </li>
   </ul>
-</section>
 
 
 
