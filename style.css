@@ -270,11 +270,23 @@ ol li {
 * { box-sizing: border-box; }
 
 .container-interactive {
-  display: flex;
+  display: flex; /* Aligns children (img-zoom-container and img-zoom-result-container) horizontally */
+  align-items: start; /* Aligns children at the top */
 }
 
 .img-zoom-container, .img-zoom-result-container {
+  display: flex;
   flex: 1;
+  align-items: start; /* Aligns images at the top */
+}
+
+.img-zoom-container {
+  flex-direction: column; /* Stacks original image vertically */
+}
+
+.img-zoom-result-container {
+  flex-direction: row; /* Lays out zoomed images side by side */
+  justify-content: start; /* Aligns zoomed images to the start */
 }
 
 .img-zoom-lens {
@@ -289,7 +301,7 @@ ol li {
   border: 1px solid #d4d4d4;
   width: 400px;
   height: 400px;
-  margin-top: 10px;
+  margin-left: 10px; /* Adds spacing between the zoomed images */
 }
 
 
