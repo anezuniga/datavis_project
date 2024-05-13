@@ -148,7 +148,7 @@ const colorsCriteria = ["#a4c2f4", "#ea9999", "#ffe599", "#f9cb9c", "#b6d7a8", "
   }
 
   // Load data from CSV file
-  d3.csv("MAPC EJ joined with parcel block groups v2.csv").then(data => {
+  d3.csv("MAPC EJ joined with parcel block groups v3.csv").then(data => {
     // Initial scatterplot with default x-axis variable
     createScatterplot(data, "EJ_pop");
 
