@@ -278,6 +278,7 @@ ol li {
   display: flex;
   flex: 1;
   align-items: start; /* Aligns images at the top */
+  position: relative;
 }
 
 .img-zoom-container {
