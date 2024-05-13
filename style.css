@@ -267,8 +267,30 @@ ol li {
   box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
+* { box-sizing: border-box; }
 
+.container-interactive {
+  display: flex;
+}
 
+.img-zoom-container, .img-zoom-result-container {
+  flex: 1;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 2px solid rgba(0, 140, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+  width: 200px;
+  height: 200px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+}
 
 
 @font-face {

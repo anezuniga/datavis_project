@@ -213,7 +213,7 @@
 
 <p>
   Based on this analysis a main takeaway is that most of the environmental justice populations are concentrated where
-  there are not alot of single family zoning and single family residence. To better support the environmental justice
+  there are not a lot of single family zoning and single family residence. To better support the environmental justice
   population we can create zoning reforms. There is an immediate need for changing the zoning from single family zoning to
   include “missing middle” types of housing and also allowing accessory dwelling units (ADUs) to be built in places where
   single family houses have already been built. ADUs are smaller, independent residential units that are located on the
@@ -224,8 +224,74 @@
 
 <!-- Slider -->
 
-<div class="interactive_slider" id="interactive_slider"></div>
+<div class="container-interactive">
+  <div class="img-zoom-container">
+    <img id="mainMap" src="figures/empty_mapc.svg" style="max-width: 100%; height: auto;">
+  </div>
+  <div class="img-zoom-result-container">
+    <div id="zoomResult1" class="img-zoom-result"></div>
+    <div id="zoomResult2" class="img-zoom-result"></div>
+  </div>
+</div>
 
+<script>
+  function imageZoom(mainMapID, resultID1, resultID2, imageSrc1, imageSrc2) {
+    var img = document.getElementById(mainMapID);
+    var result1 = document.getElementById(resultID1);
+    var result2 = document.getElementById(resultID2);
+    var lens = document.createElement("DIV");
+    lens.setAttribute("class", "img-zoom-lens");
+    img.parentElement.insertBefore(lens, img);
+  
+    // Calculate the ratio between result DIVs and the lens
+    var cx = result1.offsetWidth / lens.offsetWidth;
+    var cy = result1.offsetHeight / lens.offsetHeight;
+  
+    // Set background properties for the result DIVs with different images
+    result1.style.backgroundImage = "url('" + imageSrc1 + "')";
+    result2.style.backgroundImage = "url('" + imageSrc2 + "')";
+    result1.style.backgroundSize = result2.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  
+    // Function to move the lens
+    function moveLens(e) {
+      e.preventDefault();
+      var pos = getCursorPos(e);
+      var x = pos.x - (lens.offsetWidth / 2);
+      var y = pos.y - (lens.offsetHeight / 2);
+      if (x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth;
+      if (x < 0) x = 0;
+      if (y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight;
+      if (y < 0) y = 0;
+      lens.style.left = x + "px";
+      lens.style.top = y + "px";
+      result1.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+      result2.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+    }
+  
+    // Function to get the cursor's position relative to the image
+    function getCursorPos(e) {
+      var a = img.getBoundingClientRect();
+      var x = e.pageX - a.left - window.pageXOffset;
+      var y = e.pageY - a.top - window.pageYOffset;
+      return {x: x, y: y};
+    }
+  
+    lens.addEventListener("mousemove", moveLens);
+    img.addEventListener("mousemove", moveLens);
+    lens.addEventListener("touchmove", moveLens);
+    img.addEventListener("touchmove", moveLens);
+  }
+  
+  // Ensure the image is fully loaded before initializing the zoom
+  document.getElementById("mainMap").onload = function() {
+    imageZoom("mainMap", "zoomResult1", "zoomResult2", "figures/sfam_mapc.svg", "figures/ej_mapc.svg");
+  };
+  
+  // Handle resizing
+  window.addEventListener('resize', function() {
+    imageZoom("mainMap", "zoomResult1", "zoomResult2", "figures/sfam_mapc.svg", "figures/ej_mapc.svg");
+  });
+  </script>
 
 <div id="datasets"></div>
 <div id="sources"></div>
