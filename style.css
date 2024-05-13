@@ -305,6 +305,11 @@ ol li {
 }
 
 
+.line {
+  border-top: 5px solid #88b0bf; /* Define thickness and color of the line */
+  margin-bottom: 20px; /* Add some margin for spacing */
+}
+
 @font-face {
   font-family: 'ESL Legend';
   src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
@@ -551,6 +556,12 @@ img {
   color: #FFF;
 }
 
+
+h3 {
+  margin-top: 20px;                   /* Margin above h2 */
+  margin-bottom: 10px;                   /* Margin above h2 */
+  font-size: 20px;                    /* Title font size*/
+}
 
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
